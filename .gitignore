@@ -1,32 +1,10 @@
+HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### IntelliJ IDEA ###
-.idea/sqldialects.xml
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/vcs.xml
-.idea/jsLibraryMappings.xml
-.idea/dictionaries
-.idea/gradle.xml
-.idea/libraries
-.idea/caches
-.idea/modules.xml
-.idea/misc.xml
-.idea/modules
-.idea/codeStyles
-.idea/scopes
-.idea/runConfigurations
-.idea/shelf
-.idea/inspectionProfiles
-.idea/encodings.xml
-*.iws
-*.iml
-*.ipr
-
-### Eclipse ###
+### STS ###
 .apt_generated
 .classpath
 .factorypath
@@ -34,6 +12,12 @@ target/
 .settings
 .springBeans
 .sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 
 ### NetBeans ###
 /nbproject/private/
@@ -47,6 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-### Mac OS ###
-.DS_Store
