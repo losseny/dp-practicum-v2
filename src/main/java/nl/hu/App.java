@@ -26,6 +26,7 @@ public class App {
 
     public static void main(String[] args) throws SQLException {
         testFetchAll();
+        Connect.closeConnection();
     }
 
     /**

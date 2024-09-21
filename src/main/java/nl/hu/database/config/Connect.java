@@ -18,7 +18,13 @@ public class Connect {
             CONNECTION = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
         }
         System.out.println("Connected to database...");
-        System.out.println("Connection: " + CONNECTION);
         return CONNECTION;
+    }
+
+    public static void closeConnection() throws SQLException {
+        if (CONNECTION != null) {
+            CONNECTION.close();
+            CONNECTION = null;
+        }
     }
 }
