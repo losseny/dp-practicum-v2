@@ -1,6 +1,8 @@
 package nl.hu.domain;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Reiziger {
     private int id;
@@ -9,6 +11,7 @@ public class Reiziger {
     private String achternaam;
     private LocalDate geboortedatum;
     private Adres adres;
+    private List<OVChipkaart> ovChipkaartList;
 
     public Reiziger(int id, String voorletter, String tussenvoegsel, String achternaam, LocalDate geboortedatum) {
         this(id, voorletter, tussenvoegsel, achternaam, geboortedatum, null);
@@ -21,6 +24,7 @@ public class Reiziger {
         this.achternaam = achternaam;
         this.geboortedatum = geboortedatum;
         this.adres = adres;
+        this.ovChipkaartList = new ArrayList<>();
     }
 
 
@@ -74,6 +78,14 @@ public class Reiziger {
 
     public void setAdres(Adres adres) {
         this.adres = adres;
+    }
+
+    public List<OVChipkaart> getOvChipkaartList() {
+        return ovChipkaartList;
+    }
+
+    public void setOvChipkaartList(List<OVChipkaart> ovChipkaartList) {
+        this.ovChipkaartList = ovChipkaartList;
     }
 
     @Override
