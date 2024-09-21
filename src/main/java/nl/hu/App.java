@@ -1,13 +1,6 @@
 package nl.hu;
 
-import jakarta.persistence.metamodel.EntityType;
-import jakarta.persistence.metamodel.Metamodel;
 import nl.hu.database.config.Connect;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.query.Query;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -17,10 +10,8 @@ import java.util.Optional;
 
 /**
  * Hello world!
- *
  */
-public class App 
-{
+public class App {
 
     private static final Connection CONNECTION;
 
