@@ -1,0 +1,30 @@
+services:
+  database-ov-chip:
+    image: postgres:14.7-alpine
+    container_name: database-ov-chip
+    ports:
+      - "15432:5432"
+    env_file:
+      - .env
+    volumes:
+      - database_data_ov:/var/data/db
+    networks:
+      - my_network_v3
+  database-bedrijf:
+    image: postgres:14.7-alpine
+    container_name: database-bedrijf
+    ports:
+      - "15433:5432"
+    env_file:
+      - .env
+    volumes:
+      - database_data_bedrijf:/var/data/db
+    networks:
+      - my_network_v3
+
+networks:
+  my_network_v3:
+        driver: bridge
+volumes:
+    database_data_ov:
+    database_data_bedrijf:
