@@ -1,4 +1,4 @@
-package nl.hu.database.config;
+package nl.hu.infrastructure.config;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
